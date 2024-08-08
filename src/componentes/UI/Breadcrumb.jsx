@@ -7,8 +7,8 @@ function Breadcrumb({ items }) {
     <>
       <Breadcrumbs
         itemClasses={{
-          item: "text-black",
-          separator: "text-black",
+          item: "text-white",
+          separator: "text-white",
         }}
         underline="hover"
       >

@@ -1,7 +1,8 @@
+import EditarComiteModal from "@/componentes/Procesos/Comite/EditarComiteModal";
 import ComiteLink from "@/componentes/Procesos/ComiteLink";
 import ConvocatoriaLink from "@/componentes/Procesos/ConvocatoriaLink";
-import CronogramaModal from "@/componentes/Procesos/CronogramaModal";
-import { IconGroup } from "@/componentes/UI/Icons";
+import MiembroComiteLink from "@/componentes/Procesos/MiembroComiteLink";
+
 
 
 export const procesoColumnas = [
@@ -38,7 +39,6 @@ export const procesoColumnas = [
         cell: ({ row }) => (
             <>
                 <div className='flex gap-2  items-center '>
-                    <CronogramaModal row={row} />
                     <ComiteLink id={row.id} />
                     <ConvocatoriaLink id={row.id} />
                 </div>
@@ -46,7 +46,78 @@ export const procesoColumnas = [
         ),
     },
 ]
+export const resolucionColumnas = [
+
+    {
+        header: 'NÚMERO',
+        accessorKey: 'codigoInterno'
+    },
+    {
+        header: 'TIPO DE RESOLUCIÓN',
+        accessorKey: 'nombreInforme'
+    },
+    {
+        header: 'NÚMERO DE RESOLUCIÓN',
+        accessorKey: 'encargado'
+    },
+    {
+        header: 'FECHA DE RESOLUCIÓN',
+        accessorKey: 'fecha'
+    },
+    {
+        header: 'NÚMERO DE FOLIOS',
+        accessorKey: 'estado'
+    },
+    {
+        header: 'ESTADO',
+        accessorKey: 'estado'
+    },
+    {
+        header: 'ACCIONES',
+        cell: ({ row }) => (
+            <>
+                <div className='flex gap-2 justify-center items-center '>
+
+                </div>
+            </>
+        ),
+    },
+]
 export const comiteColumnas = [
+    {
+        header: 'TIPO DE PROCESO',
+        accessorKey: 'tipoProceso',
+        size: 300
+    },
+    {
+        header: 'PROCESO',
+        accessorKey: 'proceso',
+        size: 300
+    },
+    {
+        header: 'DRE',
+        accessorKey: 'nombreRegion',
+        size: 200
+    },
+
+    {
+        header: 'ESTADO ',
+        accessorKey: 'estado',
+        size: 30
+    },
+    {
+        header: 'ACCIONES',
+        size: 50,
+        cell: ({ row }) => (
+            <>
+                <div className='flex gap-2  items-center '>
+                    <MiembroComiteLink id={row.id} />
+                </div>
+            </>
+        ),
+    },
+]
+export const miembroComiteColumnas = [
 
     {
         header: 'NOMBRE DE COMITÉ',
@@ -85,9 +156,7 @@ export const comiteColumnas = [
         cell: ({ row }) => (
             <>
                 <div className='flex gap-2  items-center '>
-                    <CronogramaModal row={row} />
-                    <ComiteLink id={row.id} />
-                    <ConvocatoriaLink id={row.id} />
+                    <EditarComiteModal row={row} />
                 </div>
             </>
         ),

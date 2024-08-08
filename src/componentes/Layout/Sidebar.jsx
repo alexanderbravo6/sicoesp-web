@@ -10,18 +10,48 @@ const menus = {
     data: [
         {
             id: 1,
-            nombre: "Procesos",
-            icono: "config",
+            nombre: "Gestión de Procesos",
+            icono: "checklist",
             rutaRelativa: "procesos",
             tipoLink: "simple"
         },
         {
-            id: 1,
-            nombre: "Procesos",
-            icono: "config",
+            id: 2,
+            nombre: "Desarrollo de Procesos",
+            icono: "checklist",
             rutaRelativa: "/",
+            tipoLink: "accordion",
+            subModulos: [
+                {
+                    id: 1,
+                    nombre: "Designación",
+                    icono: "config",
+                    rutaRelativa: "procesos",
+                    tipoLink: "simple"
+                },
+                {
+                    id: 2,
+                    nombre: "Encargatura Director",
+                    icono: "config",
+                    rutaRelativa: "procesos",
+                    tipoLink: "simple"
+                },
+                {
+                    id: 3,
+                    nombre: "Contratación Docente",
+                    icono: "config",
+                    rutaRelativa: "procesos",
+                    tipoLink: "simple"
+                }
+            ]
+        },
+        {
+            id: 3,
+            nombre: "Resoluciones",
+            icono: "files",
+            rutaRelativa: "resolucion",
             tipoLink: "simple"
-        }
+        },
     ],
     error: false,
     isLoading: false
@@ -44,7 +74,7 @@ function Sidebar() {
                     <Divider className=" text-white" />
                 </div>
                 <span id="react-aria447405898-:r1f:" role="presentation" className="px-6 text-sm text-foreground-500" data-slot="heading">Menú</span>
-                <div className='p-4  flex justify-between flex-col flex-1' >
+                <div className='p-4 text-xs  flex justify-between flex-col flex-1' >
                     <ul>
                         <li>
                             <Link shallow={true} className={` ${pathname === "/" ? "active" : ""} flex gap-2 max-md:text-sm items-center p-2 my-2  text-white rounded-lg dark:text-white hover:bg-main  dark:hover:bg-main  group`} href="/">

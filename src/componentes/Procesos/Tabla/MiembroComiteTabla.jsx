@@ -13,15 +13,17 @@ const comites = {
     data: [
         {
             id: 1,
-            tipoProceso: "DESIGNACIÓN",
-            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
-            nombreRegion: 'LIMA METROPOLITANA',
+            nombreComite: "COMITÉ DE DESIGNACIÓN",
+            numeroDocumento: 'DNI-0004575',
+            nombreCompleto: 'BRYAN ALEXANDER MOSCOL BRAVO',
+            tipoMiembro: 'TITULAR',
+            cargoComite: "PRESIDENTE",
             estado: 'APROBADO',
         }
     ]
 }
 
-function ComiteTabla({ columnas }) {
+function MiembroComiteTabla({ columnas }) {
 
     if (comites.error) return <ErrorData />
     if (comites.isLoading) return <TableSkeleton />
@@ -39,4 +41,4 @@ function ComiteTabla({ columnas }) {
     )
 }
 
-export default ComiteTabla
+export default MiembroComiteTabla

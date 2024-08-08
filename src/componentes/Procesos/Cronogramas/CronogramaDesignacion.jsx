@@ -3,7 +3,7 @@ import React from 'react'
 const CronogramaDesignacion = () => {
     return (
         <>
-            <table className=" w-full font-normal my-4 ">
+            <table className=" w-full text-xs font-normal my-4 ">
                 <thead className=" text-left text-[13px] text-gray-700 uppercase bg-gray-100 ">
                     <tr>
                         <th className="p-2"> N°</th>

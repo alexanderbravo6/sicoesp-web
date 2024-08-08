@@ -14,10 +14,12 @@ module.exports = {
 
   ],
   theme: {
-    colors:{
+    colors: {
       ...colors,
-      main:"#3b72e3",
-      secundary:"#3b72e3"
+      main: "#3b72e3",
+      secundary: "#3b72e3",
+      title: "#338ef7"
+
     },
     extend: {},
   },

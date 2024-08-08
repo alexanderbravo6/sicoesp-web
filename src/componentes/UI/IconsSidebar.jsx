@@ -6,7 +6,7 @@ const IconsSidebar = ({ name }) => {
         switch (name) {
             case 'home':
                 return (
-                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none"  stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline w-5 h-5 icon-tabler-home">
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline w-5 h-5 icon-tabler-home">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
                         <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
@@ -23,6 +23,17 @@ const IconsSidebar = ({ name }) => {
                         <path d="M16 4h2a2 2 0 0 1 2 2v2" />
                         <path d="M16 20h2a2 2 0 0 0 2 -2v-2" />
                         <path d="M8 16a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2" />
+                    </svg>
+                );
+            case 'files':
+                return (
+                    <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-file-analytics">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                        <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                        <path d="M9 17l0 -5" />
+                        <path d="M12 17l0 -1" />
+                        <path d="M15 17l0 -3" />
                     </svg>
                 );
             case 'management':

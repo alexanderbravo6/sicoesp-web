@@ -21,7 +21,7 @@ const comites = {
     ]
 }
 
-function ComiteTabla({ columnas }) {
+function TablaResolucion({ columnas }) {
 
     if (comites.error) return <ErrorData />
     if (comites.isLoading) return <TableSkeleton />
@@ -39,4 +39,4 @@ function ComiteTabla({ columnas }) {
     )
 }
 
-export default ComiteTabla
+export default TablaResolucion
