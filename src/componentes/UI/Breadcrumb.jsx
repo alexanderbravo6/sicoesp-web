@@ -1,0 +1,25 @@
+'use client'
+import { BreadcrumbItem, Breadcrumbs } from "@nextui-org/react";
+
+function Breadcrumb({ items }) {
+
+  return (
+    <>
+      <Breadcrumbs
+        itemClasses={{
+          item: "text-black",
+          separator: "text-black",
+        }}
+        underline="hover"
+      >
+        {
+          items.map((item, index) => (
+            <BreadcrumbItem key={index} href={item.href} >{item.name} </BreadcrumbItem>
+          ))
+        }
+      </Breadcrumbs>
+    </>
+  )
+}
+
+export default Breadcrumb

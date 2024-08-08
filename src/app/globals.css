@@ -2,32 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    box-sizing: border-box;
+    @apply m-0;
+    padding: 0;
+    height: 100vh;
+    font-size: 13px;
+    font-family: 'Arial', 'Helvetica', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* SIDEBAR DESKTOP*/
+#app {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "aside header"
+        "aside main"
+        "aside footer";
+    gap: 10px;
+    grid-template-columns: 211px 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*SLIDEBAR MOBILE*/
+@media (max-width: 768px) {
+    #app {
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+    }
+}
+
+tbody {
+    text-transform: uppercase;
+}
+
+th {
+    border: 1px solid #cbd5e1;
+
+}
+
+td {
+    border: 1px solid #cbd5e1;
+
+}
+
+.active {
+    background: #2c3f66;
+}
+
+.modal {
+    background: #80808059;
+}
+
+.btn-search {
+    width: 122.42px;
+}
+
+.info-basica tr td {
+    height: 35px;
+    @apply border-0;
 }
