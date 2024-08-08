@@ -13,6 +13,7 @@ body {
 
 /* SIDEBAR DESKTOP*/
 #app {
+    
     display: grid;
     height: 100vh;
     grid-template-areas:
@@ -51,7 +52,7 @@ td {
 }
 
 .active {
-    background: #2c3f66;
+    background: #3b72e3;
 }
 
 .modal {

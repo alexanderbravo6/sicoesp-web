@@ -1,5 +1,8 @@
+import EditarExpedienteModal from "@/componentes/Expediente/EditarExpedienteModal";
+import InformeEscalafonarioButton from "@/componentes/Expediente/InformeEscalafonarioButton";
 import EditarComiteModal from "@/componentes/Procesos/Comite/EditarComiteModal";
 import ComiteLink from "@/componentes/Procesos/ComiteLink";
+import VerGestionConvocatoriaModal from "@/componentes/Procesos/Convocatoria/VerGestionConvocatoriaModal";
 import ConvocatoriaLink from "@/componentes/Procesos/ConvocatoriaLink";
 import MiembroComiteLink from "@/componentes/Procesos/MiembroComiteLink";
 
@@ -83,6 +86,104 @@ export const resolucionColumnas = [
         ),
     },
 ]
+export const gestionConvocatoriasColumnas = [
+
+    {
+        header: 'PROCESO',
+        accessorKey: 'proceso',
+        size: 40
+    },
+
+    {
+        header: 'CÓDIGO MODULAR',
+        accessorKey: 'codigoModular',
+        size: 20
+    },
+    {
+        header: 'REGION',
+        accessorKey: 'region',
+        size: 50
+    },
+    {
+        header: 'IESP/EESP',
+        accessorKey: 'institucion',
+        size: 300
+    },
+    {
+        header: 'PLAZA',
+        accessorKey: 'codigoPlaza',
+        size: 80
+    },
+    {
+        header: 'CARGO',
+        accessorKey: 'cargo',
+        size: 150
+    },
+    {
+        header: 'ETAPA',
+        accessorKey: 'etapa',
+        size: 150
+    },
+    {
+        header: 'POSTULANTES',
+        accessorKey: 'cantidadPostulante',
+        size: 20
+    },
+    {
+        header: 'ACCIONES',
+        cell: ({ row }) => (
+            <>
+                <div className='flex gap-2 justify-center items-center '>
+                    <VerGestionConvocatoriaModal />
+                </div>
+            </>
+        ),
+    },
+]
+export const convocatoriaColumnas = [
+
+    {
+        header: 'PROCESO',
+        accessorKey: 'proceso',
+        size: 200
+    },
+    {
+        header: 'PUESTO',
+        accessorKey: 'puesto',
+        size: 150
+    },
+
+    {
+        header: 'CÓDIGO MODULAR',
+        accessorKey: 'codigoModular',
+        size: 20
+    },
+    {
+        header: 'REGION',
+        accessorKey: 'region',
+        size: 50
+    },
+    {
+        header: 'IESP/EESP',
+        accessorKey: 'institucion',
+        size: 300
+    },
+    {
+        header: 'PLAZA',
+        accessorKey: 'codigoPlaza',
+        size: 80
+    },
+    {
+        header: 'ACCIONES',
+        cell: ({ row }) => (
+            <>
+                <div className='flex gap-2 justify-center items-center '>
+
+                </div>
+            </>
+        ),
+    },
+]
 export const comiteColumnas = [
     {
         header: 'TIPO DE PROCESO',
@@ -112,6 +213,57 @@ export const comiteColumnas = [
             <>
                 <div className='flex gap-2  items-center '>
                     <MiembroComiteLink id={row.id} />
+                </div>
+            </>
+        ),
+    },
+]
+export const expedienteColumnas = [
+    {
+        header: 'TIPO DE PROCESO',
+        accessorKey: 'tipoProceso',
+        size: 60
+    },
+    {
+        header: 'N° EXPEDIENTE',
+        accessorKey: 'numeroExpediente',
+        size: 30
+    },
+    {
+        header: 'N° DOCUMENTO',
+        accessorKey: 'numeroDocumento',
+        size: 30
+    },
+    {
+        header: 'NOMBRE COMPLETO',
+        accessorKey: 'nombreCompleto',
+        size: 300
+    },
+    {
+        header: 'INFORME ESCALAFONARIO',
+        accessorKey: 'informeEscalafonario',
+        size: 50
+    },
+    {
+        header: 'FECHA DE REGISTRO',
+        accessorKey: 'fechaRegistro',
+        size: 50
+    },
+    {
+        header: 'ESTADO',
+        accessorKey: 'estado',
+        size: 50
+    },
+
+
+    {
+        header: 'ACCIONES',
+        size: 50,
+        cell: ({ row }) => (
+            <>
+                <div className='flex gap-2  items-center '>
+                    <EditarExpedienteModal row={row} />
+                    <InformeEscalafonarioButton row={row} />
                 </div>
             </>
         ),

@@ -17,6 +17,20 @@ const menus = {
         },
         {
             id: 2,
+            nombre: "Expedientes",
+            icono: "checklist",
+            rutaRelativa: "expediente",
+            tipoLink: "simple"
+        },
+        {
+            id: 1,
+            nombre: "Postular",
+            icono: "directions",
+            rutaRelativa: "postular",
+            tipoLink: "simple"
+        },
+        {
+            id: 2,
             nombre: "Desarrollo de Procesos",
             icono: "checklist",
             rutaRelativa: "/",

@@ -1,6 +1,7 @@
 'use client'
 import Header from '@/componentes/Layout/Header'
 import MiembroComiteIndex from '@/componentes/Procesos/Comite/MiembroComiteIndex'
+import GestionConvocatoriaIndex from '@/componentes/Procesos/Convocatoria/GestionConvocatoriaIndex'
 import Search from '@/componentes/UI/Search'
 import React from 'react'
 const itemBreadcrumbs = [
@@ -48,7 +49,7 @@ function ConvocatoriaPage() {
 
                 </Search>
                 <div className='w-full bg-white mt-5 mb-16   h-auto  overflow-x-auto  rounded-lg  '>
-
+                    <GestionConvocatoriaIndex />
                 </div>
             </section>
 

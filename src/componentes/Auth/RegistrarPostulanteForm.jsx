@@ -56,8 +56,7 @@ function RegistroPostulanteForm() {
 
     return (
         <>
-            <form onSubmit={ValidarUsuario} className="max-w-2xl mb-[6%]  gap-5 flex flex-col md:mx-auto mx-[10%] h-[80%] md:w-full w-[80%] items-center justify-center">
-
+            <form onSubmit={ValidarUsuario} className="max-w-xl mb-[6%]  gap-5 flex flex-col md:mx-auto mx-[10%] h-[80%] md:w-full w-[80%] ">
                 <div className="mb-6 text-left w-full">
                     <h1 className=" font-extralight mb-3 text-3xl text-black"><strong className="font-bold">Formulario de registro</strong> para postulantes </h1>
                     <p className="font-extralight text-[#454545] ">Formulario para el registro de postulantes para los procesos de contratación docente, encargatura de directores y  designación de cargos directivos y puestos pedagógicos.</p>
