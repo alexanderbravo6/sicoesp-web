@@ -16,6 +16,13 @@ const menus = {
             tipoLink: "simple"
         },
         {
+            id: 10,
+            nombre: "Perfil",
+            icono: "checklist",
+            rutaRelativa: "perfil",
+            tipoLink: "simple"
+        },
+        {
             id: 2,
             nombre: "Expedientes",
             icono: "checklist",
@@ -27,6 +34,13 @@ const menus = {
             nombre: "Postular",
             icono: "directions",
             rutaRelativa: "postular",
+            tipoLink: "simple"
+        },
+        {
+            id: 10,
+            nombre: "Historial",
+            icono: "checklist",
+            rutaRelativa: "historial",
             tipoLink: "simple"
         },
         {

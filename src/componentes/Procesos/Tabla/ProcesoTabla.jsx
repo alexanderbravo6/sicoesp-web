@@ -14,8 +14,8 @@ const procesos = {
         {
             id: 1,
             anio: 2024,
-            tipoProceso: 'DESIGNACIÓN',
-            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            tipoProceso: 'ENCARGATURA DE DIRECTORES',
+            proceso: 'PROCESO DE ENCARGATURA DE DIRECTORES',
             codigoProceso: '2025-0001',
             numeroConvocatoria: "PRIMERA",
             fechaCreacion: '01/01/2024',

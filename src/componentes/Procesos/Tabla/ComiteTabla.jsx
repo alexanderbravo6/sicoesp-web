@@ -16,8 +16,71 @@ const comites = {
             tipoProceso: "DESIGNACIÓN",
             proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
             nombreRegion: 'LIMA METROPOLITANA',
-            estado: 'APROBADO',
-        }
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
+        {
+            id: 1,
+            tipoProceso: "DESIGNACIÓN",
+            proceso: 'PROCESO DE DESIGNACIÓN DE DIRECTOR GENERAL',
+            nombreRegion: 'LIMA METROPOLITANA',
+            estado: 'PENDIENTE',
+        },
     ]
 }
 

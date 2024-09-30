@@ -1,9 +1,8 @@
 'use client'
-import ExpedienteIndex from '@/componentes/Expediente/ExpedienteIndex'
+
 import Header from '@/componentes/Layout/Header'
-import MiembroComiteIndex from '@/componentes/Procesos/Comite/MiembroComiteIndex'
 import Search from '@/componentes/UI/Search'
-import { Divider } from '@nextui-org/react'
+import ExpedienteIndex from '@/modules/Expediente/ExpedienteIndex'
 import React from 'react'
 const itemBreadcrumbs = [
     {

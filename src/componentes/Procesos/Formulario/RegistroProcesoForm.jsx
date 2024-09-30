@@ -13,12 +13,9 @@ function RegistroProcesoForm() {
     return (
         <>
             <div className="grid  grid-cols-2 gap-6" >
+             
                 <div>
-                    <label htmlFor="tipoProceso" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">TIPO DE PROCESO</label>
-                    <TipoProcesoSelect />
-                </div>
-                <div>
-                    <label htmlFor="proceso" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PROCESO</label>
+                    <label htmlFor="proceso" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">TIPO DE PROCESOS</label>
                     <ProcesoSelect />
                 </div>
                 <div>
@@ -33,21 +30,7 @@ function RegistroProcesoForm() {
                 </div>
             </div>
 
-            <section>
-                <RadioGroup
-                    label="Selecciona una opción"
-                    orientation="horizontal"
-                    value={selected}
-                    onValueChange={setSelected}
-                >
-                    <Radio value="1">Asignar</Radio>
-                    <Radio value="2">Modificable</Radio>
-                    <Radio value="3">Estandar</Radio>
-                </RadioGroup>
-            </section>
-            {
-                selected == 1 ? <CronogramaDesignacion /> : <CronogramaEncargatura />
-            }
+
 
         </>
     )

@@ -13,7 +13,7 @@ function VerConvocatoriaForm({ disabled }) {
                             <CardBody>
                                 <section className="grid grid-cols-1 gap-6 md:grid-cols-2 ">
                                     <div>
-                                        <label for="region" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">REGIÓN</label>
+                                        <label htmlForm="region" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">REGIÓN</label>
                                         <select id="region" className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option value="">SELECCIONAR</option>
                                             <option value="1">LIMA METROPOLITANA</option>
@@ -21,7 +21,7 @@ function VerConvocatoriaForm({ disabled }) {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="nroConvocatoria" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° DE CONVOCATORIA</label>
+                                        <label htmlForm="nroConvocatoria" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° DE CONVOCATORIA</label>
                                         <select id="nroConvocatoria" className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option value="">SELECCIONAR</option>
                                             <option value="1">PRIMERA CONVOCATORIA</option>
@@ -30,7 +30,7 @@ function VerConvocatoriaForm({ disabled }) {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="areaDesempenio" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">ÁREA DE DESEMPEÑO</label>
+                                        <label htmlForm="areaDesempenio" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">ÁREA DE DESEMPEÑO</label>
                                         <select id="areaDesempenio" className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option value="">SELECCIONAR</option>
                                             <option value="1">DIRECTIVO</option>
@@ -39,7 +39,7 @@ function VerConvocatoriaForm({ disabled }) {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="puesto" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PUESTO</label>
+                                        <label htmlForm="puesto" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PUESTO</label>
                                         <select id="puesto" className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                                             <option value="">SELECCIONAR</option>
                                             <option value="1">DIRECTOR GENERAL</option>
@@ -57,12 +57,12 @@ function VerConvocatoriaForm({ disabled }) {
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="nroVacante" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° DE VACANTES</label>
+                                        <label htmlForm="nroVacante" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° DE VACANTES</label>
                                         <input type="text" id="nroVacante" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
 
                                     </div>
                                     <div>
-                                        <label for="enlacePublicacion" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">ENLACE DE PUBLICACIÓN</label>
+                                        <label htmlForm="enlacePublicacion" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">ENLACE DE PUBLICACIÓN</label>
                                         <input type="text" id="enlacePublicacion" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
 
                                     </div>

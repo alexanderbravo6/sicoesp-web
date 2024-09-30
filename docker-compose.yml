@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sicoesp-web
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NEXTAUTH_SECRET=1fdc6c034011531b72eee4c5f95596d9dsfsdsdsdfdsdsdSASDDSASDSDsdssdsddsxd1212
+      - NEXT_PUBLIC_BACKEND_URL=http://localhost:8000
+    

@@ -98,11 +98,11 @@ export default function RegistroExpedienteModal() {
                                 <Divider className='mt-1 mb-4' />
                                 <section className="grid gap-6 items-end grid-cols-1 md:grid-cols-3">
                                     <div className="col-span-1">
-                                        <label for="´tipoProceso" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">TIPO DE PROCESO</label>
+                                        <label htmlForm="´tipoProceso" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">TIPO DE PROCESO</label>
                                         <input type="text" disabled value={"DESIGNACIÓN"} id="´tipoProceso" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                     </div>
                                     <div className="col-span-1">
-                                        <label for="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° INFORME ESCALAFONARIO</label>
+                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° INFORME ESCALAFONARIO</label>
                                         <input type="text" id="informeEscalafonario" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                     </div>
                                     <div className="col-span-1">
@@ -111,7 +111,7 @@ export default function RegistroExpedienteModal() {
                                         </Button>
                                     </div>
                                     <div className="col-span-2">
-                                        <label for="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PREVISUALIZACIÓN</label>
+                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PREVISUALIZACIÓN</label>
                                         <InformeEscalafonarioButton />
                                     </div>
 
