@@ -7,7 +7,7 @@ import useSWR from "swr";
 import { configSWR } from "../Constants/GlobalConstants";
 export const GlobalContext = createContext();
 
-const accesoActual = [
+const accesos = [
     {
         "idPersonaRol": 2,
         "idRol": 2,
@@ -335,8 +335,8 @@ const accesoActual = [
         ]
     },
     {
-        "idPersonaRol": 3,
-        "idRol": 3,
+        "idPersonaRol": 6,
+        "idRol": 6,
         "rol": "COMITÉ DE EVALUACIÓN",
         "idPersona": 1,
         "porDefecto": 1,
@@ -351,11 +351,11 @@ const accesoActual = [
                 "idMenu": 1,
                 "idMenuPadre": 0,
                 "esPadre": false,
-                "nombre": "Mis Documentos",
+                "nombre": "Encargatura",
                 "codigo": "GESMAT",
                 "descripcion": "Gestión de Matrículas",
                 "icono": "person",
-                "ruta": "informe",
+                "ruta": "evaluacion/encargatura",
                 "acciones": [
                     {
                         "idAccion": 1,
@@ -384,117 +384,7 @@ const accesoActual = [
                     }
                 ]
             },
-            {
-                "idMenu": 1,
-                "idMenuPadre": 0,
-                "esPadre": false,
-                "nombre": "Expedientes",
-                "codigo": "GESMAT",
-                "descripcion": "Gestión de Matrículas",
-                "icono": "directions",
-                "ruta": "expediente",
-                "acciones": [
-                    {
-                        "idAccion": 1,
-                        "nombre": "ACCEDER",
-                        "codigo": "ACC"
-                    },
-                    {
-                        "idAccion": 3,
-                        "nombre": "AGREGAR",
-                        "codigo": "AGR"
-                    },
-                    {
-                        "idAccion": 4,
-                        "nombre": "MODIFICAR",
-                        "codigo": "MOD"
-                    },
-                    {
-                        "idAccion": 5,
-                        "nombre": "ELIMINAR",
-                        "codigo": "ELI"
-                    },
-                    {
-                        "idAccion": 2,
-                        "nombre": "CONSULTAR",
-                        "codigo": "CON"
-                    }
-                ]
-            },
-            {
-                "idMenu": 1,
-                "idMenuPadre": 0,
-                "esPadre": false,
-                "nombre": "Postulación",
-                "codigo": "GESMAT",
-                "descripcion": "Gestión de Matrículas",
-                "icono": "directions",
-                "ruta": "postulacion",
-                "acciones": [
-                    {
-                        "idAccion": 1,
-                        "nombre": "ACCEDER",
-                        "codigo": "ACC"
-                    },
-                    {
-                        "idAccion": 3,
-                        "nombre": "AGREGAR",
-                        "codigo": "AGR"
-                    },
-                    {
-                        "idAccion": 4,
-                        "nombre": "MODIFICAR",
-                        "codigo": "MOD"
-                    },
-                    {
-                        "idAccion": 5,
-                        "nombre": "ELIMINAR",
-                        "codigo": "ELI"
-                    },
-                    {
-                        "idAccion": 2,
-                        "nombre": "CONSULTAR",
-                        "codigo": "CON"
-                    }
-                ]
-            },
-            {
-                "idMenu": 1,
-                "idMenuPadre": 0,
-                "esPadre": false,
-                "nombre": "Historial",
-                "codigo": "GESMAT",
-                "descripcion": "Gestión de Matrículas",
-                "icono": "checklist",
-                "ruta": "historial",
-                "acciones": [
-                    {
-                        "idAccion": 1,
-                        "nombre": "ACCEDER",
-                        "codigo": "ACC"
-                    },
-                    {
-                        "idAccion": 3,
-                        "nombre": "AGREGAR",
-                        "codigo": "AGR"
-                    },
-                    {
-                        "idAccion": 4,
-                        "nombre": "MODIFICAR",
-                        "codigo": "MOD"
-                    },
-                    {
-                        "idAccion": 5,
-                        "nombre": "ELIMINAR",
-                        "codigo": "ELI"
-                    },
-                    {
-                        "idAccion": 2,
-                        "nombre": "CONSULTAR",
-                        "codigo": "CON"
-                    }
-                ]
-            },
+       
         ]
     }
 ]
@@ -507,10 +397,10 @@ export const useGlobal = () => {
     return context;
 }
 const GlobalProvider = ({ children }) => {
-
+    const { data: session } = useSession();
+    console.log(session?.user.idPersonaRol)
     /*
         const axios = useClienteAxios();
-
         const fetchPermisos = async () => {
             const response = await axios.get(session ? `/v1/auth/accesos/${session?.user?.idPersona}` : null);
             if (response.data.success === false) {
@@ -526,10 +416,10 @@ const GlobalProvider = ({ children }) => {
 
         signOut();
     }
-    /*
-        const accesoActual = accesos?.filter((acceso) => acceso.idPersonaRol === session?.user.idPersonaRol)
-    
-    */
+
+    const accesoActual = accesos?.filter((acceso) => acceso.idPersonaRol === session?.user.idPersonaRol)
+
+
     return (
         <GlobalContext.Provider value={{
             handleClickCerrarSesion,

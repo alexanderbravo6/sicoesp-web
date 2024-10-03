@@ -1,4 +1,5 @@
-import DescargarArchivoButton from "../Components/Buttons/DescargarArchivoButton"
+
+import DescargarArchivoButton from "@/shared/Components/Buttons/DescargarArchivoButton"
 import EliminarDocumentoObligatorioButton from "../Components/Buttons/EliminarDocumentoObligatorioButton"
 import EliminarFormacionProfesionalButton from "../Components/Buttons/EliminarFormacionProfesionalButton"
 import ActualizarFormacionProfesionalModal from "../Components/Modals/ActualizarFormacionProfesionalModal"

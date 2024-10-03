@@ -73,78 +73,78 @@ function RegistrarExpedienteForm({ onClose }) {
                     }
                     <div class="px-4  sm:px-0">
                         <h3 class="text-base font-semibold leading-7 text-gray-900">DATOS PERSONALES</h3>
-                        <p class="mt-1 max-w-2xl text-xs leading-6 text-gray-500">Información personal del postulante.</p>
+                        <p class="mt-1 max-w-2xl text-md leading-6 text-gray-500">Información personal del postulante.</p>
                     </div>
                     <Divider className='mt-1 mb-4' />
                     <div className='grid md:grid-cols-8 grid-cols-1 gap-6' >
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">DNI</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">73632374</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">DNI</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">73632374</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Nombres</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Bryan Alexander </dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Nombres</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Bryan Alexander </dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Apellido Materno</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Moscol </dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Apellido Materno</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Moscol </dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Apellido Paterno</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Bravo</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Apellido Paterno</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Bravo</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Fecha de Nacimiento</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">09/01/2024</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Fecha de Nacimiento</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">09/01/2024</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Teléfono Celular</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">942417725</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Teléfono Celular</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">942417725</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Correo Electrónico</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">bryanalexandermoscolbravo@gmail.com</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Correo Electrónico</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">bryanalexandermoscolbravo@gmail.com</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Sexo</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Masculino</dd>
+                            <dt className="text-md font-medium leading-6 text-gray-900">Sexo</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">Masculino</dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Dirección</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            <dt className="text-md font-medium leading-6 text-gray-900">Dirección</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                 Asoc. Residencial Montecarlos Mz. C. LT 10
                             </dd>
                         </div>
 
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Región</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            <dt className="text-md font-medium leading-6 text-gray-900">Región</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                 Lima
                             </dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Provincia</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            <dt className="text-md font-medium leading-6 text-gray-900">Provincia</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                 Lima
                             </dd>
                         </div>
                         <div className='col-span-2'>
-                            <dt className="text-xs font-medium leading-6 text-gray-900">Distrito</dt>
-                            <dd className="mt-1 text-xs leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
+                            <dt className="text-md font-medium leading-6 text-gray-900">Distrito</dt>
+                            <dd className="mt-1 text-md leading-6 text-gray-700 sm:col-span-2 sm:mt-0">
                                 San Martin de Porres
                             </dd>
                         </div>
                     </div>
                     <div class="px-4 mt-8 sm:px-0">
                         <h3 class="text-base font-semibold leading-7 text-gray-900">EXPEDIENTE</h3>
-                        <p class="mt-1 max-w-2xl text-xs leading-6 text-gray-500">Deberá ingresa el código del informe escalafonario.</p>
+                        <p class="mt-1 max-w-2xl text-md leading-6 text-gray-500">Deberá ingresa el código del informe escalafonario.</p>
                     </div>
                     <Divider className='mt-1 mb-4' />
                     <section >
-                        <label htmlForm="´tipoProceso" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">TIPO DE PROCESO</label>
+                        <label htmlForm="´tipoProceso" class="block mb-2 text-md font-medium text-gray-900 dark:text-white">TIPO DE PROCESO</label>
                         <select id="tipoProceso"
                             onChange={(e) => SetTipoProceso(e.target.value)}
-                            className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            className="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option value="">SELECCIONAR</option>
                             <option value="1">CONTRATACIÓN</option>
                             <option value="2">ENCARGATURA DIRECTOR</option>
@@ -157,8 +157,8 @@ function RegistrarExpedienteForm({ onClose }) {
                             (
                                 <section className="grid gap-6 items-end grid-cols-1 md:grid-cols-3">
                                     <div className="col-span-1">
-                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">N° INFORME ESCALAFONARIO</label>
-                                        <input type="text" id="informeEscalafonario" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-md font-medium text-gray-900 dark:text-white">N° INFORME ESCALAFONARIO</label>
+                                        <input type="text" id="informeEscalafonario" class="bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                                     </div>
                                     <div className="col-span-1">
                                         <Button color="primary">
@@ -166,7 +166,7 @@ function RegistrarExpedienteForm({ onClose }) {
                                         </Button>
                                     </div>
                                     <div className="col-span-2">
-                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">PREVISUALIZACIÓN</label>
+                                        <label htmlForm="informeEscalafonario" class="block mb-2 text-md font-medium text-gray-900 dark:text-white">PREVISUALIZACIÓN</label>
 
                                     </div>
                                 </section>

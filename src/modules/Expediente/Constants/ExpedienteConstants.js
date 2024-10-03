@@ -1,3 +1,5 @@
+import DescargarArchivoButton from "@/shared/Components/Buttons/DescargarArchivoButton";
+
 export const ExpedienteColumns = [
     {
         header: 'TIPO DE PROCESO',
@@ -45,7 +47,7 @@ export const ExpedienteColumns = [
         cell: ({ row }) => (
             <>
                 <div className='flex gap-2  items-center '>
-
+                    <DescargarArchivoButton id={row.original.idArchivo} />
                 </div>
             </>
         ),

@@ -26,7 +26,7 @@ function ExpedientePage() {
                     <Search handleSearch={handleSearch} >
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                             <div>
-                                <label htmlFor="informeEscalafonario" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">NÚMERO DE INFORME ESCALAFONARIO</label>
+                                <label htmlFor="informeEscalafonario" className="block mb-2 text-xs font-medium text-gray-900 dark:text-white">NÚMERO DE INFORME </label>
                                 <input type="text" id="informeEscalafonario" className="bg-gray-50 border border-gray-300 text-gray-900 text-xs rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
                             </div>
                             <div>

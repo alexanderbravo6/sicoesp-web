@@ -4,15 +4,13 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 
 import TemplateBaseModal from '@/shared/Components/Templates/TemplateBaseModal';
 import { useUtils } from '@/shared/Hooks/useUtils';
-import RegistrarFormacionProfesionalForm from '../Forms/RegistrarFormacionProfesionalForm';
-import { useInforme } from '../../Providers/InformeProvider';
+import ConvocatoriaTable from '../Tables/ConvocatoriaTable';
+function SeleccionarConvocatoriaModal() {
 
-function RegistrarFormacionProfesionalModal() {
-    const { isOpenDO, SetIsOpenDO } = useInforme()
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
     const { ValidarPermisos } = useUtils()
     if (!ValidarPermisos('GESMAT', 'AGR')) return null
-    if (!isOpenDO) return null
+
     return (
         <>
             <Button onPress={onOpen} className='mb-4' size='md' color="primary">
@@ -30,10 +28,16 @@ function RegistrarFormacionProfesionalModal() {
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-col  gap-1">
-                                <h1 className=" text-blue-400 ">REGISTRAR FORMACIÓN PROFESIONAL</h1>
+                                <h1 className=" text-blue-400 ">LISTA DE CONVOCATORIAS</h1>
                             </ModalHeader>
-                            <RegistrarFormacionProfesionalForm onClose={onClose} />
-                         
+                            <section className='p-4'>
+                                <ConvocatoriaTable />
+                            </section>
+                            <ModalFooter>
+                                <Button color="danger" variant="flat" onPress={onClose}   >
+                                    Cerrar
+                                </Button>
+                            </ModalFooter>
                         </>
 
                     )}
@@ -43,4 +47,4 @@ function RegistrarFormacionProfesionalModal() {
     )
 }
 
-export default RegistrarFormacionProfesionalModal
+export default SeleccionarConvocatoriaModal

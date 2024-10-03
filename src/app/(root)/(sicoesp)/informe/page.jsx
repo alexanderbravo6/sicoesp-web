@@ -27,10 +27,10 @@ function InformePage() {
 
                 <div className='w-full bg-white mt-5 mb-16   h-auto  overflow-x-auto  rounded-lg  '>
                     {
-                        session?.user.idRol === 3 && <InformeContratacionIndex />
+                        session?.user.idRol === 1 && <InformeContratacionIndex />
                     }
                     {
-                        session?.user.idRol === 4 && <InformeEncargaturaIndex />
+                        session?.user.idRol === 2 && <InformeEncargaturaIndex />
                     }
 
 
