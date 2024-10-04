@@ -5,8 +5,9 @@ import { Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDi
 import TemplateBaseModal from '@/shared/Components/Templates/TemplateBaseModal';
 import { useUtils } from '@/shared/Hooks/useUtils';
 import { IconEdit } from '@/componentes/UI/Icons';
+import ExpedienteEncargaturaTable from '../Tables/ExpedienteEncargaturaTable';
 
-function EvaluacionExpedienteEncargaturaModal({
+function ExpedienteEncargaturaModal({
     row
 }) {
     const { isOpen, onOpen, onOpenChange } = useDisclosure();
@@ -28,8 +29,11 @@ function EvaluacionExpedienteEncargaturaModal({
                     {(onClose) => (
                         <>
                             <ModalHeader className="flex flex-col  gap-1">
-                                <h1 className=" text-blue-400 ">ACTUALIZAR FORMACIÓN PROFESIONAL</h1>
+                                <h1 className=" text-blue-400 ">EVALUACIÓN DE EXPEDIENTES</h1>
                             </ModalHeader>
+                            <section className="p-6">
+                                <ExpedienteEncargaturaTable />
+                            </section>
                         </>
 
                     )}
@@ -39,4 +43,4 @@ function EvaluacionExpedienteEncargaturaModal({
     )
 }
 
-export default EvaluacionExpedienteEncargaturaModal
+export default ExpedienteEncargaturaModal

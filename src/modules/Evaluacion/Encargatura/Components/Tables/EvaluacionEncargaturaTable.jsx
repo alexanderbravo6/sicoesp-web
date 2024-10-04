@@ -15,8 +15,7 @@ const data = {
             codigoConvocatoria: "CEDG-2024-001",
             region: 'LIMA METROPOLITANA',
             cantidadPlazas: '2',
-            resolucionSustento: '73632374',
-            numeroConvocatoria: "PRIMERA",
+            tipoConvocatoria: "PRIMERA",
             fechaRegistro: '01/01/2024',
         }
     ]

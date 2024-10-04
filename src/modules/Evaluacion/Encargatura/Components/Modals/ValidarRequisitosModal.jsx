@@ -6,6 +6,7 @@ import TemplateBaseModal from '@/shared/Components/Templates/TemplateBaseModal';
 import { useUtils } from '@/shared/Hooks/useUtils';
 import { IconEdit } from '@/componentes/UI/Icons';
 import PlazaTable from '../Tables/PlazaTable';
+import ValidarRequisitosForms from '../Forms/ValidarRequisitosForms';
 
 function RequisitoEncargaturaModal({
     row
@@ -34,7 +35,7 @@ function RequisitoEncargaturaModal({
                                 </h1>
                             </ModalHeader>
                             <section className='p-4'>
-                                <PlazaTable />
+                                <ValidarRequisitosForms onClose={onClose} />
                             </section>
 
                         </>
